@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./postDetails.module.css"
 export default function Content({ post }) {
 
@@ -41,7 +42,9 @@ export default function Content({ post }) {
                 </div>
                 <h4 className="fs-5">لا تفوّت جديدنا</h4>
                 <p className="text-dark-emphasis fa-sm">اشترك للحصول على أحدث المقالات</p>
+                <Link to="/blog">
                 <button className="btn p-3 fw-bold rounded-4 text-white fw-bold bg-primary">تصفح المذيد</button>
+                </Link>
               </div>
             </div>
           </div>
