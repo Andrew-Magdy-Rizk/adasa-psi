@@ -1,5 +1,5 @@
 import Content from "./Content";
-import Hero from "./hero";
+import Hero from "./Hero";
 import data from "../../assets/posts.json";
 import { useParams } from "react-router-dom";
 import RelatedPosts from "./RelatedPosts";
