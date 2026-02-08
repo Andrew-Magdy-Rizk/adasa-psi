@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+  --primary-color: #ff6900;
+  --secondary-color: #FAA920;
+}
+
+* {
+  color: white;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+body {
+  font-family: "tajawal", sans-serif;
+  line-height: 1.5;
+  background-color: #0A0A0A;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.text-dark-emphasis{
+  color: #969696 !important;
+}
+
+.bg-primary{
+  background-color: var(--primary-color) !important;
+}
+.text-primary{
+  color: var(--primary-color) !important;
+}
+
+
+.custom-breadcrumb {
+  --bs-breadcrumb-divider: ">";
+}

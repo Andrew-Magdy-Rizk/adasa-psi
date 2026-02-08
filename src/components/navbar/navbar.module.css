@@ -1,0 +1,87 @@
+.image {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    transition: background-color .3s;
+    z-index: 9999999;
+}
+
+.backgroundHeaderTop {
+    background: #161616;
+}
+
+.backgroundHeaderScroll {
+    background-color: #0A0A0A;
+    border-bottom: 1px solid #363636;
+}
+
+.scale img {
+    transition: transform .3s;
+}
+
+.scale:hover img {
+    transform: scale(1.05);
+}
+
+.btnBlog {
+    background-color: var(--primary-color) !important;
+    padding: 12px 24px !important;
+    transition: transform .2s;
+}
+.btnBlog:hover {
+    transform: translateY(-2px);
+}
+
+.colorPrimary {
+    color: var(--secondary-color);
+}
+
+.textSmall {
+    font-size: 12px !important;
+}
+
+.icon {
+    transition: all .3s;
+    padding: 12px;
+    border: 1px solid transparent;
+
+}
+
+.icon:hover {
+    border: 1px solid #3a3a3a;
+
+}
+
+.icon i {
+    transition: color .3s;
+}
+
+.icon:hover i {
+    color: var(--primary-color) !important;
+}
+
+.navLinks {
+    border: 1px solid #3a3a3a;
+    color: white;
+}
+
+.linkActive {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.linkActive a {
+    color: white !important;
+}
+
+.linkActiveMobile {
+    background-color: #2E1E14 !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.linkActiveMobile a {
+    color: var(--primary-color) !important;
+}

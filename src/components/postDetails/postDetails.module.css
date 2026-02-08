@@ -1,0 +1,107 @@
+.nav {
+    width: fit-content;
+    font-size: 14px;
+}
+
+.nav li::before {
+    color: white !important;
+    font-weight: bold;
+    padding: 0 6px 0 14px !important;
+    opacity: 50%;
+}
+
+.layoutgradent {
+    background: linear-gradient(0deg, #000000 0%, #00000011 50%) !important;
+
+}
+
+.headTitle {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.authorCard {
+    border: 1px solid #595959 !important;
+    background-color: #80808044;
+    backdrop-filter: blur(5px);
+}
+
+
+.sidebar {
+    top: 92px !important;
+}
+
+.iconList {
+    border: 1px solid var(--primary-color);
+    background-color: #29190F;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    font-size: 14px;
+}
+
+.list li span {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.mailIcon {
+    background-color: #29190F;
+    width: fit-content;
+}
+
+.iconHeadTitle {
+    border: 1px solid var(--primary-color);
+    background-color: #29190F;
+}
+
+.mediaLink {
+    transition: background-color .2s;
+}
+
+.mediaLink:hover:nth-child(4) {
+    background-color: var(--primary-color) !important;
+}
+
+.mediaLink:hover:nth-child(3) {
+    background-color: #25D366 !important;
+}
+
+.mediaLink:hover:nth-child(2) {
+    background-color: #0077B5 !important;
+}
+
+.mediaLink:hover:nth-child(1) {
+    background-color: #1DA1F2 !important;
+}
+
+.showMore {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    transition: transform .2s !important;
+
+}
+
+
+@media(min-width: 768px) {
+    .headTitle {
+        font-size: 60px;
+    }
+}
+
+@media(min-width: 992px) {
+    .headTitle {
+        font-size: 72px;
+    }
+
+     .sidebar {
+        position: sticky !important;
+    }
+
+   
+
+}

@@ -1,0 +1,340 @@
+.hero {
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+
+    background-size: 60px 60px;
+}
+
+.gradentPrimary,
+.gradentSecondary {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    opacity: .3;
+    filter: blur(150px);
+    border-radius: 50%;
+}
+
+.gradentPrimary {
+    top: 100px;
+    left: 100px;
+    background-color: var(--primary-color);
+}
+
+.gradentSecondary {
+    bottom: 100px;
+    right: 100px;
+    background-color: var(--secondary-color);
+
+}
+
+.colorSecondary {
+    color: var(--secondary-color);
+}
+
+.headTitle {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.welcomeMsg {
+    background-color: #2E1E14;
+    border: 1px solid var(--primary-color);
+    padding: 8px 16px !important;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.animate1,
+.animate2 {
+    background-color: var(--primary-color);
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 8px;
+    position: relative;
+}
+
+.animate1 {
+    width: 6px;
+    height: 6px;
+    animation: opacity 3s infinite;
+}
+
+.animate2 {
+    width: 8px;
+    height: 8px;
+
+}
+
+.animate2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    animation: plus 1s infinite ease-out;
+}
+
+.btnBlogColor {
+    background-color: var(--primary-color) !important;
+    transition: transform .2s !important;
+}
+
+.btnBlogColor:hover {
+    background-color: var(--primary-color) !important;
+    transform: translateY(-3px);
+}
+
+.btnBlogColor i {
+    transition: transform .2s !important;
+    margin-right: 6px;
+}
+
+.btnBlogColor:hover i {
+    transform: translateX(-3px);
+}
+
+.btnInfoColor:hover {
+    background-color: #2E1E14 !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.btnInfoColor i {
+    transition: color .2s;
+}
+
+.btnInfoColor:hover i {
+    color: var(--primary-color);
+}
+
+
+.secondaryColor {
+    color: var(--secondary-color);
+}
+
+.iconPrimaryColor {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.card {
+    background-color: #161514;
+    border: 1px solid #333333;
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.headTitle2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes plus {
+    0% {
+        transform: translate(-50%, -50%) scale(.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+
+.bgSectionGradent {
+    background: #150E0A;
+    background: linear-gradient(260deg, rgba(21, 14, 10, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.head2 {
+    font-size: 36px;
+}
+
+.btnBlogs {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    transition: transform .2s !important;
+
+}
+
+.btnBlogs:hover {
+    transform: translateY(-3px);
+}
+
+.btnBlogs i {
+    transition: transform .2s;
+}
+
+.btnBlogs:hover i {
+    transform: translateX(-3px);
+}
+
+.BlogCard>div img {
+    transition: transform 1s !important;
+}
+
+.BlogCard:hover>div img {
+    transform: scale(1.1);
+}
+
+.typeBlog {
+    border: 1px solid var(--primary-color);
+    background-color: #2E1E14;
+    color: var(--primary-color);
+    font-size: 12px;
+    padding: 4px 12px !important;
+    font-weight: bold;
+}
+
+.BlogCard h3 {
+    transition: color .2s;
+}
+
+.BlogCard:hover h3 {
+    color: var(--primary-color);
+}
+
+.BlogCard .showMore span {
+    color: var(--primary-color) !important;
+    transition: transform .3s;
+    display: inline-block;
+}
+
+.BlogCard:hover .showMore span {
+    transform: translateX(3px) !important;
+}
+
+.BlogCard .showMore i {
+    color: var(--primary-color);
+}
+
+.avaImg img {
+    width: 40px;
+    height: 40px;
+}
+
+.tagImg {
+    left: -4px;
+    bottom: -4px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+    border: 2px solid black;
+}
+
+.favTag {
+    background: #FF6900;
+    background: linear-gradient(90deg, rgba(255, 105, 0, 1) 0%, rgba(250, 169, 32, 1) 100%);
+    right: 20px;
+    top: 20px;
+    padding: 6px 12px;
+    z-index: 20;
+    font-size: 12px;
+}
+
+.categoryCard {
+    border: 1px solid #41414193 !important;
+    transition: transform .3s !important;
+}
+
+.categoryCard:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(145deg, rgba(255, 105, 0, 1) 0%, rgba(250, 169, 32, 1) 100%);
+}
+.categoryCard span {
+    transition: background-color .3s, color .3s, border .3s !important;
+}
+.categoryCard p {
+    transition:  color .3s !important;
+}
+.categoryCard:hover span {
+    background-color: #d3d3d354;
+    color: white !important;
+    border: transparent !important;
+}
+.categoryCard:hover p {
+    color: white !important;
+}
+
+.categoryCard .catIcon {
+    background-color: #2E1E14;
+    border-color: var(--primary-color) !important;
+}
+.categoryCard .catIcon i  {
+    color: var(--primary-color);
+    transition: color .3s !important;
+}
+.categoryCard:hover .catIcon i{
+    color: white;
+}
+
+
+.btnPrimary{
+    background-color: var(--primary-color) !important; 
+    color: white !important;
+    border-radius: 10px !important;
+}
+.btnPrimary:hover{
+    background-color: #EF4700 !important;
+}
+
+
+@media(min-width: 768px) {
+    .headTitle {
+        font-size: 60px;
+    }
+
+    .headTitle2 {
+        font-size: 48px;
+    }
+
+    .head2 {
+        font-size: 48px;
+    }
+}
+
+@media(min-width: 992px) {
+    .headTitle {
+
+        font-size: 72px;
+    }
+
+    .headTitle2 {
+
+        font-size: 60px;
+    }
+
+    .head2 {
+        font-size: 60px;
+    }
+
+}
