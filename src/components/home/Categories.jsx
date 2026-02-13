@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom"
 import style from "./home.module.css"
 export default function Categories() {
+
+    const [SearchParams, setSearchParams] =useSearchParams()
     return (
         <section className="bg-dark bg-opacity-50">
             <div className='container-fluid container-lg py-5 mx-auto'>
@@ -13,7 +15,7 @@ export default function Categories() {
                 <p className="fs-6 text-dark-emphasis text-center">اعثر على محتوى مصمم حسب اهتماماتك</p>
                 <div className="row g-3 py-4">
                     <div className="col-6 col-lg-3">
-                        <Link to="blog?category=اضاءة">
+                        <Link onClick={setSearchParams({category : "إضاءة"})}  to={{pathname: "blog", search: "?category=إضاءة"}}>
                         <div className={`${style.categoryCard} h-100 d-flex justify-content-between align-items-center bg-dark bg-opacity-50 rounded-4 p-4`}>
                             <div>
                                 <span className={`${style.catIcon} p-2 rounded-3 border d-inline-block mb-3`}><i className="fa-solid fa-gear fa-lg"></i></span>
@@ -27,7 +29,7 @@ export default function Categories() {
                         </Link>
                     </div>
                     <div className="col-6 col-lg-3">
-                        <Link to="blog?category=بورتريه">
+                        <Link onClick={setSearchParams({category : "بورتريه"})}  to={{pathname: "blog", search: "?category=بورتريه"}}>
 
                             <div className={`${style.categoryCard} d-flex h-100 justify-content-between align-items-center bg-dark bg-opacity-50 rounded-4 p-4`}>
                                 <div>
@@ -42,7 +44,7 @@ export default function Categories() {
                         </Link>
                     </div>
                     <div className="col-6 col-lg-3">
-                        <Link to="blog?category=مناظر طبيعية">
+                        <Link onClick={setSearchParams({category : "مناظر طبيعية"})}  to={{pathname: "blog", search: "?category=مناظر طبيعية"}}>
                             <div className={`${style.categoryCard} d-flex h-100 justify-content-between align-items-center bg-dark bg-opacity-50 rounded-4 p-4`}>
                                 <div>
                                     <span className={`${style.catIcon} p-2 rounded-3 border d-inline-block mb-3`}><i className="fa-solid fa-mountain-sun fa-lg"></i></span>
@@ -56,7 +58,7 @@ export default function Categories() {
                         </Link>
                     </div>
                     <div className="col-6 col-lg-3">
-                        <Link to="blog?category=تقنيات">
+                        <Link onClick={setSearchParams({category : "تقنيات"})}  to={{pathname: "blog", search: "?category=تقنيات"}}>
                             <div className={`${style.categoryCard} d-flex h-100 justify-content-between align-items-center bg-dark bg-opacity-50 rounded-4 p-4`}>
                                 <div>
                                     <span className={`${style.catIcon} p-2 rounded-3 border d-inline-block mb-3`}><i className="fa-solid fa-sliders fa-lg"></i></span>
@@ -70,7 +72,7 @@ export default function Categories() {
                         </Link>
                     </div>
                     <div className="col-6 col-lg-3">
-                        <Link to="blog?category=معدات">
+                        <Link onClick={setSearchParams({category : "معدات"})}  to={{pathname: "blog", search: "?category=معدات"}}>
                             <div className={`${style.categoryCard} d-flex h-100 justify-content-between align-items-center bg-dark bg-opacity-50 rounded-4 p-4`}>
                                 <div>
                                     <span className={`${style.catIcon} p-2 rounded-3 border d-inline-block mb-3`}><i className="fa-solid fa-toolbox fa-lg"></i></span>

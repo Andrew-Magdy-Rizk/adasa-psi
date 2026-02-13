@@ -5,7 +5,7 @@ export default function Content({ post }) {
   const content = post.content.split("\n\n");
   const titles = content.filter((title) => title.includes("##"));
 
-  console.log(post);
+  // console.log(post);
 
 
   return (

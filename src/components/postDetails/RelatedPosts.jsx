@@ -7,7 +7,7 @@ export default function RelatedPosts({ category }) {
 
   const relatedPosts = data.posts.filter((post) => post.category === category);
 
-  console.log(relatedPosts);
+  // console.log(relatedPosts);
 
 
   return (

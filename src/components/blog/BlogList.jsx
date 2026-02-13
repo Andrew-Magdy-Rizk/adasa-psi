@@ -2,15 +2,16 @@ import style from "./blog.module.css"
 import BlogCard from "./BlogCard"
 import data from "../../assets/posts.json"
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 export default function BlogList() {
 
     const categories = data.categories;
     const [currentcategory, setCurrentcategory] = useState("all");
     const [posts, setPosts] = useState(data.posts);
     const [typeView, setTypeview] = useState("gallary");
-    const { search } = useLocation();
-    const param = useParams();
+    // const { search } = useLocation();
+    const [searchParams] = useSearchParams();
+    const searchCategory = searchParams.get("category");
 
     const handelChange = (e) => {
 
@@ -29,10 +30,11 @@ export default function BlogList() {
     }
 
     useEffect(() => {
-        console.log(param);
+        // console.log(searchParams.get("category"));
         
-        if (search) {
-            setCurrentcategory(search)
+        if (searchCategory) {
+            // console.log(search)
+            setCurrentcategory(searchCategory)
         }
     }, []);
 
